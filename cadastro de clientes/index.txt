@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="">
+            <label for="nome">Nome completo*:</label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+            <label for="email">E-mail*:</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <label for="telefone">Número de telefone*:</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+            <label for="dataNasc">Data de nascimento*:</label>
+            <input type="date" name="dataNasc" id="dataNasc" required>
+            <p>Aceitação dos termos</p>
+            <label for="termos">Aceito</label>
+            <input type="checkbox" name="sim" id="sim">
+            <label for="termos">Não aceito</label>
+            <input type="checkbox" name="nao" id="nao">
+        </form>
+    </fieldset>
+</body>
+</html>
