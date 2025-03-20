@@ -9,25 +9,26 @@
 </head>
 <body>
     <h1>Reserve sua sala</h1>
-    <fieldset>
+    <fieldset class="fieldset">
         <legend>Dados da reserva</legend>
         <form action="">
-            <label for="dataReserva">Data da reserva*: </label>
-            <input type="date" name="dataReserva" id="dataReserva" required min="2025-03-19">
+            <label class="dtreserva" for="dataReserva">Data da reserva*: </label>
+            <input class="dtReserva" type="date" name="dataReserva" id="dataReserva" required min="2025-03-19">
 
-            <label for="horario">Horário de começo e término*:</label>
-            <input type="time" name="horario" id="horario" required>
+            <label class="hrReserva" for="horario">Horário de começo e término*:</label>
+            <input class="hrReserva" type="time" name="horario" id="horario" required>
 
-            <label for="tipoSala">Tipo de sala</label>
-            <select name="sala" id="sala">
+            <label class="tipoSala" for="tipoSala">Tipo de sala</label>
+            <select class="tipoSala" name="sala" id="sala">
                 <option value="sala1">Reunião</option>
                 <option value="sala2">Treinamento</option>
                 <option value="sala3">Individual</option>
             </select>
 
-            <label for="numParticipantes">Número de participantes*: </label>
-            <input type="number" name="numero" id="numero" required min="1">
-            <button>
+            <label class="numPart" for="numParticipantes">Número de participantes*: </label>
+            <input class="numpart" type="number" name="numero" id="numero" required min="1" placeholder="min: 1">
+
+            <button class="button">
                 <p>Enviar</p>
             </button>
         </form>
