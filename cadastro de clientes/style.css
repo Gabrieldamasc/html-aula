@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #ecc0c06b;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+.fieldset{
+    background-color: #ecc0c0b6;
+    padding: 10px;
+    margin: 10px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.692);
+    font-weight: 500;
+}
+
+legend{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.nome{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+
+.email{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
