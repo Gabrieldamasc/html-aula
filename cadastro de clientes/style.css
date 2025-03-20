@@ -30,6 +30,12 @@ legend{
     text-align: center;
 }
 
+#nome,#email,#telefone,#dataNasc{
+    border-radius: 5px;
+    border: none;
+    height: 17px;
+    width: 200px;
+}
 
 .nome{
     display: block;
@@ -41,4 +47,45 @@ legend{
     display: block;
     margin: 5px;
     padding: 5px;
+}
+
+.telefone{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+
+.dataNasc{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+
+.aceitacao{
+    margin: 5px;
+    padding: 5px;
+    display: block;
+}
+
+
+.checkboxSandN{
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+}
+
+.button{
+    display: block;
+    margin-left: 50%;
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c09c9c;
+}
+
+.button:hover{
+    background-color: #7c6666;
+    color: white;
+    transition: 0.5s;
 }
