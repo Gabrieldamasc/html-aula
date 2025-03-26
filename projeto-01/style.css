@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+}
+
+body{
+    background-color: rgb(126, 126, 125);
+}
+
+.header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 2.5em;
+}
+
+.barra-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    gap: 20px;
+    background-color: rgba(114, 113, 113, 0.137);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.144);
+    
+}
+
+.barra-nav a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(241, 197, 115);
+    transition: 0.4s;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.barra-nav a:hover{
+    background-color: rgb(245, 216, 162);
+}
+
+.menu-lateral{
+    width: 10vw;
+    height: 63vh;
+    padding: 10px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: rgb(241, 197, 115);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.menu-lateral a{
+    padding: 5px;
+    margin-top: 10px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 1.0em;
+
+}
+
+
+.menu-lateral a:hover{
+    color: black;
+    background-color: white;
+    transform: translate(0px, -5px);
+}
+
+.imagem1{
+    text-align: center;
+    justify-content: center;
+    transition: 0.4s;
+    margin-bottom: 30px;
+}
+
+.imagem1:hover{
+    transform: translate(0px, -5px);
+}
+
+.sobre-nos, .contato{
+    margin-right: 30%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 0, 0, 0.144);
+    color: white;
+    transition: 0.4s;
+}
+
+.sobre-nos:hover, .contato:hover{
+    transform: translate( 0px, -5px);
+    background-color: rgb(241, 197, 115);
+    color: black;
+}
+
+footer{
+    border-top: 1px solid rgba(255, 0, 0, 0.144);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+}
+
+
