@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Verificador de idade</h1>
+    <form id="formulario">
+        <label for="ageUser">Insira sua data de nascimento:</label>
+        <input type="date" name="ageUser" id="ageUser">
+        <button type="submit">
+            calcular idade
+        </button>
+
+        <label for="nomeUser">Digite seu nome:</label>
+        <input type="text" name="nameUser" id="nameUser">
+        <button type="submit">
+            enviar nome
+        </button>
+    </form>
+
+    <p id="resultado"></p>
+
+<script>
+    document.getElementById("formulario").addEventListener("submit", function(e){
+        e.preventDefault();
+
+        const dataNascimento = new Date(document.getElementById("ageUser").value);
+        const hoje = new Date();
+
+        let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+        const mes = hoje.getMonth() - dataNascimento.getMonth();
+
+        if(mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())){
+            idade--;
+        }
+
+        if(idade <= 17 && idade !== 0){
+            alert("Você é menor de idade!")
+            document.getElementById("resultado").textContent = `idade: ${idade} anos`;
+        }else if(idade >= 18 && idade !== 0){
+            alert("Você é maior de idade!")
+            document.getElementById("resultado").textContent = `idade: ${idade} anos`;
+        }else{
+            alert("Idade inválida. Tente novamente!")
+        }
+    
+    });
+
+</script>
+</body>
+</html>
